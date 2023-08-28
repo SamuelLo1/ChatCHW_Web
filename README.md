@@ -1,8 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Developers
+Samuel Lo
+Timothy Le
+
+Sophi Brent (UI/UX)
+
 ## Getting Started
 
-First, run the development server:
+Welcome to the ChatCHW Website Github!
+This README.md will provide the basic introduction in running the application.
+We are currently working on a proper documentation file.
+
+For first-time users:
+```bash 
+# Run the following below to download npm packages
+npm install
+```
+
+To run the website on your computer, run the following:
 
 ```bash
 npm run dev
