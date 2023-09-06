@@ -14,7 +14,9 @@ const routes = [
 const NavigationBar = () => {
   return (
     <div className="">
-      <h1>Navigation Bar</h1>
+      <h1>
+        Navigation Bar
+      </h1>
     </div>
   )
 }

@@ -3,7 +3,6 @@ import Image from "next/image";
 const HomePage = () => {
   return (
     <div>
-
       <div className="flex items-center justify-center h-screen">
         <h1 className="text-center">TITLE</h1>
         <Image 
@@ -13,7 +12,6 @@ const HomePage = () => {
           className="rounded-full"
         />
       </div>
-      
     </div>
 
   )
