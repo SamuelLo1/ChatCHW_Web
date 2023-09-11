@@ -1,11 +1,11 @@
 import React from 'react'
+
 import Link from 'next/link';   // react component to provide client side navigation between routes
 import Image from 'next/image'; // use for logo
 
 const routes = [
   {
     label: "About",
-    // icon:
     href: "/about",
     color: "text-white-100",
   },
@@ -13,10 +13,36 @@ const routes = [
 
 const NavigationBar = () => {
   return (
-    <div className="">
-      <h1>
-        Navigation Bar
-      </h1>
+    <div className="
+    border-black
+    border-solid
+    border
+
+    flex
+    flex-col
+    bg-[#2A8680]
+    text-white
+    w-full
+
+    ">
+      <div className="px-4 py-2 flex-1">
+        <Link href="" className="flex items-center pl-3">  {/* TODO: Add Link Href */}
+          <div className="relative w-10 h-10 mr-4">
+            <Image
+              fill
+              alt="Logo"
+              src="/vercel.svg"
+            />
+          </div>
+        </Link>
+        <div className="space-x-1">
+          
+        </div>
+
+
+
+
+      </div>
     </div>
   )
 }
