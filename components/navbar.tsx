@@ -26,7 +26,8 @@ const NavigationBar = () => {
 
     ">
       <div className="px-4 py-2 flex-1">
-        <Link href="" className="flex items-center pl-3">  {/* TODO: Add Link Href */}
+        <Link href="/" className="flex pl-3 border w-[10%]">  
+        {/* TODO: Add Link Href? Current redirect to homepage */}
           <div className="relative w-10 h-10 mr-4">
             <Image
               fill
@@ -35,12 +36,21 @@ const NavigationBar = () => {
             />
           </div>
         </Link>
-        <div className="space-x-1">
-          
+
+        <div className="space-x-1 border w-[10%] ">
+          {routes.map((route) => (
+            <Link
+              href={route.href}
+              key={route.href}
+              // hover effects and active hover
+              className="text-sm group flex w-full"
+            >
+              <div className="flex items-center flex-1">
+                {route.label}
+              </div>
+            </Link>
+          ))}
         </div>
-
-
-
 
       </div>
     </div>
