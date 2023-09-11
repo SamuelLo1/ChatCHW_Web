@@ -9,6 +9,21 @@ const routes = [
     href: "/about",
     color: "text-white-100",
   },
+  {
+    label: "Blog",
+    href: "/blog",
+    color: "text-white-100",
+  },
+  {
+    label: "Demo",
+    href: "/demo",
+    color: "text-white-100",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+    color: "text-white-100",
+  },
 ]
 
 const NavigationBar = () => {
