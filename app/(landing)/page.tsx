@@ -41,11 +41,11 @@ const HomePage = () => {
          
       </div>
       <div className ="w-full "> 
-          <section className="text-center px-36 text-5xl font-bold text-gray-700">
+          <section className="text-center px-36 pt-6 text-5xl font-bold text-gray-700">
             <h1> Facilitating Community</h1>
           </section>
 
-          <section className="text-gray-600 text-center py-16 px-72 flex-wrap ">
+          <section className="text-gray-600 text-center py-16 px-96 flex-wrap ">
             <p>Delivering innovative solutions and fostering collaboration to achieve lasting positive impact and sustainable growth. 
               We offer a comprehensive platform that equips CHWs with cutting-edge technology and training, enabling them to deliver 
               more efficient and effective care to their communities.</p>
