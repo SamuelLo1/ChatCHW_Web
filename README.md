@@ -2,6 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Developers
 Samuel Lo
+
 Timothy Le
 
 Sophi Brent (UI/UX)
