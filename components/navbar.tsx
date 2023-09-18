@@ -40,10 +40,11 @@ const NavigationBar = () => {
     w-full
 
     ">
-      <div className="px-4 py-2 flex-1">
-        <Link href="/" className="flex pl-3 border w-[10%]">  
-        {/* TODO: Add Link Href? Current redirect to homepage */}
-          <div className="relative w-10 h-10 mr-4">
+      <div className="flex justify-between items-center w-[97%] mx-auto">
+        {/* Image */}
+        <Link href="/" className="flex w-[10%]">  
+        {/* TODO: Add link? Current redirect to homepage */}
+          <div className="relative w-14 h-14">
             <Image
               fill
               alt="Logo"
@@ -52,21 +53,30 @@ const NavigationBar = () => {
           </div>
         </Link>
 
-        <div className="space-x-1 border w-[10%] ">
+        {/* Routes */}
+        <div className="">
+          <ul className="flex items-center gap-[4vw] ">
           {routes.map((route) => (
-            <Link
-              href={route.href}
-              key={route.href}
-              // hover effects and active hover
-              className="text-sm group flex w-full"
-            >
-              <div className="flex items-center flex-1">
-                {route.label}
-              </div>
-            </Link>
-          ))}
+              <Link
+                href={route.href}
+                key={route.href}
+                // hover effects and active hover
+                className="text-sm group flex w-full"
+              >
+                <li className="flex items-center flex-1">
+                  <a className="hover:text-green-500">{route.label}</a>
+                </li>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      
+        {/* Donate Button */}
+        <div>
+          <button className="bg-[#FFFFFF] text-black px-5 py-2 rounded-full hover:bg-[#87acec]">Donate</button>
         </div>
 
+        
       </div>
     </div>
   )
