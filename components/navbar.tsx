@@ -46,7 +46,8 @@ const NavigationBar = () => {
     bg-[#2A8680]
     text-white
     w-full
-
+    fixed
+    z-50
     ">
       <div className="flex justify-between items-center w-[97%] mx-auto">
         {/* Image */}
@@ -55,7 +56,7 @@ const NavigationBar = () => {
             <Image
               fill
               alt="Logo"
-              src="/vercel.svg"
+              src="/assets/navIcon.svg"
             />
           </div>
         </Link>

@@ -17,7 +17,7 @@ const HomePage = () => {
 
 
   return (
-    <body>
+    <div>
       <div className="flex items-center justify-evenly ">
         {/*SlideShow*/ }
 
@@ -105,7 +105,7 @@ const HomePage = () => {
         </div> 
        
       </div>
-    </body>
+    </div>
 
     
     
