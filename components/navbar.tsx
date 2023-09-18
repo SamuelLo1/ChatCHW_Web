@@ -1,7 +1,18 @@
+"use client"
+
+/*
+  Top navigation bar created by Timothy
+  TODO: Fix hydration error: could do in another page
+*/
+
+
 import React from 'react'
 
-import Link from 'next/link';   // react component to provide client side navigation between routes
-import Image from 'next/image'; // use for logo
+import Link from 'next/link';   // React component to provide client side navigation between routes
+import Image from 'next/image'; // Logo
+import { usePathname } from "next/navigation";
+
+import { cn } from "@/lib/utils";
 
 const routes = [
   {
@@ -27,12 +38,9 @@ const routes = [
 ]
 
 const NavigationBar = () => {
+  const pathname = usePathname();
   return (
     <div className="
-    border-black
-    border-solid
-    border
-
     flex
     flex-col
     bg-[#2A8680]
@@ -43,7 +51,6 @@ const NavigationBar = () => {
       <div className="flex justify-between items-center w-[97%] mx-auto">
         {/* Image */}
         <Link href="/" className="flex w-[10%]">  
-        {/* TODO: Add link? Current redirect to homepage */}
           <div className="relative w-14 h-14">
             <Image
               fill
@@ -54,17 +61,16 @@ const NavigationBar = () => {
         </Link>
 
         {/* Routes */}
-        <div className="">
+        <div className="pr-10 ml-auto ">
           <ul className="flex items-center gap-[4vw] ">
           {routes.map((route) => (
               <Link
                 href={route.href}
                 key={route.href}
-                // hover effects and active hover
-                className="text-sm group flex w-full"
+                className={cn("text-sm group flex w-full", pathname === route.href ? "text-decoration-line: underline" : "")}
               >
                 <li className="flex items-center flex-1">
-                  <a className="hover:text-green-500">{route.label}</a>
+                  <a className="hover:text-[#87acec] font-bold">{route.label}</a>
                 </li>
               </Link>
             ))}
@@ -73,7 +79,7 @@ const NavigationBar = () => {
       
         {/* Donate Button */}
         <div>
-          <button className="bg-[#FFFFFF] text-black px-5 py-2 rounded-full hover:bg-[#87acec]">Donate</button>
+          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-full hover:bg-[#87acec] font-bold">Donate</button>
         </div>
 
         
