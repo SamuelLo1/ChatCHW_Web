@@ -59,12 +59,12 @@ const NavigationBar = () => {
               src="/assets/navIcon.svg"
             />
           </div>
-          <div className="absolute w-20 h-20">
+          <div className="relative w-20 h-10 mt-[10px]">
             <Image
                 fill
                 alt="LogoText"
                 src="/assets/chatchw.svg"
-                className="ml-[65px] mt-[-10px]"
+                className="ml-[10px]"
               />
           </div>
         </Link>
