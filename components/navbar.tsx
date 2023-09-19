@@ -59,6 +59,14 @@ const NavigationBar = () => {
               src="/assets/navIcon.svg"
             />
           </div>
+          <div className="absolute w-20 h-20">
+            <Image
+                fill
+                alt="LogoText"
+                src="/assets/chatchw.svg"
+                className="ml-[65px] mt-[-10px]"
+              />
+          </div>
         </Link>
 
         {/* Routes */}
