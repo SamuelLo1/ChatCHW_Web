@@ -100,7 +100,7 @@ const HomePage = () => {
         </section>
       </div>
 
-      <div className="flex items-center justify-evenly"> 
+      <div className="flex items-center justify-evenly mb-24"> 
         <div>
           <Image 
             src="assets/steps.svg"
@@ -117,13 +117,21 @@ const HomePage = () => {
             height={670}
             alt="device"
           />
+          <div className="relative"> 
            <Image 
             src="assets/deviceTest.svg"
             width={300}
             height={670}
             alt="deviceTest"
-            className="relative bottom-96 ml-10 "
+            className="absolute bottom-96 ml-10 "
           />
+          <Link
+            href ="/about"
+            className=" absolute hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded  bg-emerald-400	left-24 bottom-80"
+          >
+            About Us
+          </Link>
+          </div>
           
         </div>
       </div> 
