@@ -1,23 +1,45 @@
+'use client'
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
+import { useState } from 'react';
+import {RxDotFilled, RxDot} from 'react-icons/rx'
 
 const AboutPage = () => {
+  const slides = [
+    {
+      url : "/assets/tech-doc.jpg"
+    },
+    {
+      url : "/assets/tech.jpg"
+    },
+    {
+      url : "/assets/nurse.svg"
+    },
+  ]
 
+  const [currentIndex, setCurrentIndex] = useState(0)
+  //traverse through from left side
+  const prevSlide =() =>{
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex)
+  }
+  //traverse from right side
+  const nextSlide =() =>{
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0: currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }
 
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex)
+  }
   return (
-    <div className ="flex items-center justify-evenly "> 
+    <div className ="flex items-center justify-evenly relative"> 
       <div className="mt-24 flex justify-evenly items-center">
-        <div className ="mr-20 ">
-          <Image
-            src = "/assets/nurse.svg"
-            height ={660}
-            width = {730}
-            alt = "image"
-            className="bg-center bg-cover"
-          />
-        </div> 
-        <div className = "font-ubuntu align-middle flex-wrap px-36 w-3/5 overflow-wrap">
+      <div className = "font-ubuntu align-middle flex-wrap px-36 w-3/5 overflow-wrap">
           <h1 className = "text-5xl text-gray-700 font-bold	mb-6">  ChatCHW   </h1>
           <p className=" text-gray-400 mb-10">
             We understand that CHWs play a vital role in bridging the gap between underserved 
@@ -40,6 +62,46 @@ const AboutPage = () => {
           </Link>
           
         </div>
+        <div className ="group relative py-16 px-4">
+          <Image
+            src = {slides[currentIndex].url}
+            height ={660}
+            width = {800}
+            alt = "image"
+            className="rounded-md shadow-xl bg-cover duration-500"
+          />
+          {/* left arrow */}
+          <div className='hidden group-hover:block -translate-x-0 absolute top-[50%] translate-y-[-50%] left-5 text-2xl rounded-full p-2  bg-black/50 text-white cursor-pointer'>
+            <BsChevronCompactLeft onClick={prevSlide} size={30}/>
+          </div>
+          {/* right arrow */}
+          <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/50 text-white cursor-pointer'>
+            <BsChevronCompactRight onClick={nextSlide} size={30}/>
+          </div>
+
+          <div className="flex top-4 justify-center py-2">
+            {slides.map((slide,slideIndex) => (
+              <div 
+                key = {slideIndex}
+                onClick ={()=>goToSlide(slideIndex)}
+                className="text-2xl cursor-pointer"
+              >
+                {currentIndex == slideIndex ? (
+                <>
+                <RxDot/>
+                </>
+                ):
+                (
+                <>
+                <RxDotFilled />
+                </>
+                )
+                }
+              </div>
+            ))}
+          </div>
+        </div> 
+        
       </div> 
     </div>
   )
