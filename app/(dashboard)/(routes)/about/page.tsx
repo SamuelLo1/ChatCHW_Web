@@ -37,8 +37,11 @@ const AboutPage = () => {
     setCurrentIndex(slideIndex)
   }
   return (
-    <div className ="flex items-center justify-evenly relative"> 
+    <div>
+      <div className ="flex items-center justify-evenly relative"> 
+
       <div className="mt-24 flex justify-evenly items-center">
+
       <div className = "font-ubuntu align-middle flex-wrap px-36 w-3/5 overflow-wrap">
           <h1 className = "text-5xl text-gray-700 font-bold	mb-6">  ChatCHW   </h1>
           <p className=" text-gray-400 mb-10">
@@ -62,6 +65,7 @@ const AboutPage = () => {
           </Link>
           
         </div>
+
         <div className ="group relative py-16 px-4">
           <Image
             src = {slides[currentIndex].url}
@@ -102,6 +106,75 @@ const AboutPage = () => {
           </div>
         </div> 
         
+      </div> 
+
+    </div>
+    <div className ="flex items-center justify-evenly"> 
+        <div className="ml-10">
+          <Image
+            src = "/assets/mask.svg"
+            height ={424}
+            width = {600}
+            alt = "image"
+            className="bg-center bg-cover px-5"
+          />
+        </div> 
+        <div className = "font-ubuntu align-middle flex-wrap px-12 mr-10 w-1/2 overflow-wrap">
+          <h1 className = "text-3xl text-gray-800 font-bold	mb-6">  Unique Attributes   </h1>
+          <p className=" text-gray-500 mb-10">
+          ChatCHW’s mission is to strengthen the impact of community
+           health workers by providing comprehensive support services, 
+           technology solutions, and educational resources. We believe 
+           that empowered CHWs can drive positive change in healthcare 
+           outcomes, reduce health disparities, and create healthier, 
+           more resilient communities.
+          </p>
+          <div className="flex justify-evenly">
+          <div className="">
+            <Image
+              src = "/assets/icons.svg"
+              height ={50}
+              width = {50}
+              alt = "icon"
+              className="mb-2"
+            />
+            <h1 className="flex-wrap px-4 w-48 mb-2 text-gray-700 text-lg font-medium">AI</h1>
+            <p className="flex-wrap px-4 w-48 text-gray-500 font-light">
+              Strengthens the diagnosis 
+              and treatment path
+            </p>
+
+          </div>
+          <div className="">
+            <Image
+              src = "/assets/comIcon.svg"
+              height ={50}
+              width = {50}
+              alt = "icon"
+              className="mb-2"
+            />
+            <h1 className="flex-wrap px-4 w-48 mb-2 text-gray-700 text-lg font-medium">Community</h1>
+            <p className="flex-wrap px-4 w-48 text-gray-500 font-light">
+              Strengthens the diagnosis 
+              and treatment path
+            </p>
+          </div>
+          <div className="">
+            <Image
+              src = "/assets/bulbIcon.svg"
+              height ={50}
+              width = {50}
+              alt = "icon"
+              className="mb-2"
+            />
+            <h1 className="flex-wrap px-4 w-48 mb-2 text-gray-700 text-lg font-medium">Up-to-date</h1>
+            <p className="flex-wrap px-4 w-48 text-gray-500 font-light">
+              Strengthens the diagnosis 
+              and treatment path
+            </p>
+          </div>
+        </div>
+      </div>
       </div> 
     </div>
   )
