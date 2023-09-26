@@ -33,7 +33,7 @@ const BlogPage = () => {
                 </div>
 
                 {/* Boxes (Right) */}
-                <div className="flex ml-20 mt-[5%] w-[45%]">
+                <div className="flex pl-5 mt-[5%] w-[45%]">
                     <div className="grid grid-cols-2 gap-4 border border-black]">
                         {/* Box 1 */}
                         <div className="border border-blue-200 bg-[#FFD6B9]">
