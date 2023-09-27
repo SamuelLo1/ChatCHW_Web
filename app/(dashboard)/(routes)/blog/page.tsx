@@ -45,7 +45,7 @@ const BlogPage = () => {
                                 <p className="mt-2 text-[#505D68]">
                                     Testimonial Name
                                 </p>
-                                <p className="mt-2 text-[#505D68]">
+                                <p className="mt-2 text-[#505D68] text-sm">
                                     Job title
                                 </p>
                             </div>
