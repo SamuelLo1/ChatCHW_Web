@@ -1,9 +1,9 @@
 const BlogPage = () => {
     return ( 
         <div>
-            <div className="flex">
+            <div className="flex pl-10 pr-10 mt-[4%] justify-around ">
                 {/* Left */}
-                <div className="border border-black w-[45%] ml-[10%] mt-[5%] text-[#505D68]">
+                <div className="border border-black w-[45%] text-[#505D68]">
                     {/* Title Text */}
                     <div>
                         <h1 className="font-bold text-4xl">
@@ -33,7 +33,7 @@ const BlogPage = () => {
                 </div>
 
                 {/* Boxes (Right) */}
-                <div className="flex pl-5 mt-[5%] w-[45%]">
+                <div className="w-[45%] border border-black">
                     <div className="grid grid-cols-2 gap-4 border border-black]">
                         {/* Box 1 */}
                         <div className="border border-blue-200 bg-[#FFD6B9]">
