@@ -38,7 +38,7 @@ const AboutPage = () => {
   }
   return (
     <div>
-      <div className ="flex items-center justify-evenly relative"> 
+      <div className ="flex items-center justify-evenly relative "> 
 
       <div className="mt-24 flex justify-evenly items-center">
 
@@ -174,8 +174,19 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
+
       </div>
+    
       </div> 
+      <div className="text-center">           
+      <h1 className="text-center mt-20 text-6xl font-bold text-gray-700	"> Our Impact</h1>
+      <section className=" items-center w-1/2 mt-5 text-gray-400 overflow-wrap ">
+        <p>By harnessing the power of technology, we have unlocked a new era of accessible and personalized care.</p>
+      </section>
+      </div>
+      <div className="flex justify-evenly">
+          
+      </div>
     </div>
   )
 }
