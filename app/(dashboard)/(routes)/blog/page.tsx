@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const BlogPage = () => {
     return ( 
         <div>
@@ -38,7 +40,15 @@ const BlogPage = () => {
                         {/* Box 1 */}
                         <div className="border border-blue-200 bg-[#FFD6B9]">
                             {/* Div surrounding text */}
-                            <div className="ml-2 mr-2">
+                            <div className="ml-2 mr-2 text-center mt-5 mb-3">
+                                <div className="flex justify-center">
+                                    <Image 
+                                        src={"assets/quote.svg"}
+                                        height={50}
+                                        width={50}
+                                        alt="quote"
+                                    />
+                                </div>
                                 <p className="mt-2">
                                     Testimonial Text
                                 </p>
