@@ -35,10 +35,32 @@ const BlogPage = () => {
                 </div>
 
                 {/* Boxes (Right) */}
-                <div className="w-[45%] border border-black">
-                    <div className="grid grid-cols-2 gap-4 border border-black]">
+                <div className="w-[45%]">
+                    <div className="grid grid-cols-2 gap-4">
                         {/* Box 1 */}
-                        <div className="border border-blue-200 bg-[#FFD6B9]">
+                        <div className="bg-[#FFD6B9]">
+                            {/* Div surrounding text */}
+                            <div className="ml-2 mr-2 text-center mt-5 mb-3">
+                                <div className="flex justify-center">
+                                    <Image 
+                                        src={"assets/quote.svg"}
+                                        height={50}
+                                        width={50}
+                                        alt="quote"
+                                    />
+                                </div>
+                                <p className="mt-2">
+                                    Testimonial Text Testimonial Text 
+                                </p>
+                                <p className="mt-2 text-[#505D68]">
+                                    Testimonial Name
+                                </p>
+                                <p className="mt-2 text-[#505D68] text-sm">
+                                    Job title
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-[#FFD6B9]">
                             {/* Div surrounding text */}
                             <div className="ml-2 mr-2 text-center mt-5 mb-3">
                                 <div className="flex justify-center">
@@ -60,9 +82,50 @@ const BlogPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="border border-blue-200">2</div>
-                        <div className="border border-blue-200">3</div>
-                        <div className="border border-blue-200">4</div>
+                        <div className="bg-[#FFD6B9]">
+                            {/* Div surrounding text */}
+                            <div className="ml-2 mr-2 text-center mt-5 mb-3">
+                                <div className="flex justify-center">
+                                    <Image 
+                                        src={"assets/quote.svg"}
+                                        height={50}
+                                        width={50}
+                                        alt="quote"
+                                    />
+                                </div>
+                                <p className="mt-2">
+                                    Testimonial Text Testimonial Text Testimonial Text
+                                </p>
+                                <p className="mt-2 text-[#505D68]">
+                                    Testimonial Name
+                                </p>
+                                <p className="mt-2 text-[#505D68] text-sm">
+                                    Job title
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-[#FFD6B9]">
+                            {/* Div surrounding text */}
+                            <div className="ml-2 mr-2 text-center mt-5 mb-3">
+                                <div className="flex justify-center">
+                                    <Image 
+                                        src={"assets/quote.svg"}
+                                        height={50}
+                                        width={50}
+                                        alt="quote"
+                                    />
+                                </div>
+                                <p className="mt-2">
+                                    Testimonial Text Testimonial Text Testimonial Text Testimonial Text
+                                </p>
+                                <p className="mt-2 text-[#505D68]">
+                                    Testimonial Name
+                                </p>
+                                <p className="mt-2 text-[#505D68] text-sm">
+                                    Job title
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
