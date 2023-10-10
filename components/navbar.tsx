@@ -88,7 +88,7 @@ const NavigationBar = () => {
       
         {/* Donate Button */}
         <div>
-          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-full hover:bg-[#87acec] font-bold">Donate</button>
+          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-[3px] hover:bg-[#87acec] font-bold">Donate</button>
         </div>
 
         

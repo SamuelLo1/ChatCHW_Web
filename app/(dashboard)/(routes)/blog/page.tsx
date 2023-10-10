@@ -5,7 +5,7 @@ const BlogPage = () => {
         <div>
             <div className="flex pl-10 pr-10 mt-[4%] justify-around ">
                 {/* Left */}
-                <div className="border border-black w-[45%] text-[#505D68]">
+                <div className="w-[45%] text-[#505D68]">
                     {/* Title Text */}
                     <div>
                         <h1 className="font-bold text-4xl">
@@ -25,7 +25,8 @@ const BlogPage = () => {
 
                     {/* Bullet points */}
                     <div className="pt-3">
-                        <ul className="list-outside">
+                        <ul className="list-outside list-disc">
+                            {/* TODO: Add number bullet points */}
                             <li className="pt-2">Improve healthcare access and quality in underserved communities</li>
                             <li className="pt-2">Reduce health disparities and imrpove health equity</li>
                             <li className="pt-2">Enchance the overall well-being and health outcomes of individuals and families</li>
