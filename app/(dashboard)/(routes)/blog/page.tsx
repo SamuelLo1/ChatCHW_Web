@@ -39,7 +39,7 @@ const BlogPage = () => {
                 <div className="w-[45%]">
                     <div className="grid grid-cols-2 gap-4">
                         {/* Box 1 */}
-                        <div className="bg-[#FFD6B9]">
+                        <div className="bg-[#FFD6B9] overflow-auto">
                             {/* Div surrounding text */}
                             <div className="ml-2 mr-2 text-center mt-5 mb-3">
                                 <div className="flex justify-center">
@@ -61,7 +61,7 @@ const BlogPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-[#FFD6B9]">
+                        <div className="bg-[#FFD6B9] overflow-auto">
                             {/* Div surrounding text */}
                             <div className="ml-2 mr-2 text-center mt-5 mb-3">
                                 <div className="flex justify-center">
@@ -83,7 +83,7 @@ const BlogPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-[#FFD6B9]">
+                        <div className="bg-[#FFD6B9] overflow-auto">
                             {/* Div surrounding text */}
                             <div className="ml-2 mr-2 text-center mt-5 mb-3">
                                 <div className="flex justify-center">
@@ -105,7 +105,7 @@ const BlogPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-[#FFD6B9]">
+                        <div className="bg-[#FFD6B9] overflow-auto">
                             {/* Div surrounding text */}
                             <div className="ml-2 mr-2 text-center mt-5 mb-3">
                                 <div className="flex justify-center">
