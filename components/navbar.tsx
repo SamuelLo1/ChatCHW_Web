@@ -46,7 +46,8 @@ const NavigationBar = () => {
     bg-[#2A8680]
     text-white
     w-full
-
+    fixed
+    z-50
     ">
       <div className="flex justify-between items-center w-[97%] mx-auto">
         {/* Image */}
@@ -55,8 +56,16 @@ const NavigationBar = () => {
             <Image
               fill
               alt="Logo"
-              src="/vercel.svg"
+              src="/assets/navIcon.svg"
             />
+          </div>
+          <div className="relative w-20 h-10 mt-[10px]">
+            <Image
+                fill
+                alt="LogoText"
+                src="/assets/chatchw.svg"
+                className="ml-[10px]"
+              />
           </div>
         </Link>
 
@@ -69,8 +78,8 @@ const NavigationBar = () => {
                 key={route.href}
                 className={cn("text-sm group flex w-full", pathname === route.href ? "text-decoration-line: underline" : "")}
               >
-                <li className="flex items-center flex-1">
-                  <a className="hover:text-[#87acec] font-bold">{route.label}</a>
+                <li className="flex items-center flex-1 hover:text-[#87acec] font-bold">
+                  {route.label}
                 </li>
               </Link>
             ))}
@@ -79,7 +88,7 @@ const NavigationBar = () => {
       
         {/* Donate Button */}
         <div>
-          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-full hover:bg-[#87acec] font-bold">Donate</button>
+          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-[3px] hover:bg-[#87acec] font-bold">Donate</button>
         </div>
 
         

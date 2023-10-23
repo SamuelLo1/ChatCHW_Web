@@ -18,9 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     
       <body className={inter.className}>
-        <NavigationBar />
-        {children}
+       <NavigationBar />
+        <main className="pt-[60px]">
+          {children}
+        </main>
       </body>
     </html>
   )
