@@ -3,7 +3,7 @@ import Image from "next/image";
 const BlogPage = () => {
     return ( 
         <div>
-            <div className="flex pl-10 pr-10 mt-[4%] justify-around ">
+            <div className="flex pl-14 pr-14 mt-[4%] justify-around ">
                 {/* Left */}
                 <div className="w-[45%] text-[#505D68]">
                     {/* Title Text */}
@@ -14,8 +14,8 @@ const BlogPage = () => {
                     </div>
 
                     {/* Paragraph Text */}
-                    <div className="pt-3">
-                        <p className="">
+                    <div className="pt-3 text-lg">
+                        <p className="w-[80%]">
                             At ChatCHW, we measure our success by the
                             positive outcomes achieved by CHWs and the
                             communities they serve. By equipping CHWs with
@@ -24,8 +24,8 @@ const BlogPage = () => {
                     </div>
 
                     {/* Bullet points */}
-                    <div className="pt-3">
-                        <ul className="list-outside list-disc">
+                    <div className="pt-3 w-[80%]">
+                        <ul className="list-outside list-disc text-lg">
                             {/* TODO: Add number bullet points */}
                             <li className="pt-2">Improve healthcare access and quality in underserved communities</li>
                             <li className="pt-2">Reduce health disparities and imrpove health equity</li>
@@ -36,6 +36,7 @@ const BlogPage = () => {
                 </div>
 
                 {/* Boxes (Right) */}
+                {/* TODO: Make it mobile friendly by putting boxes under text when display is small */}
                 <div className="w-[45%]">
                     <div className="grid grid-cols-2 gap-4">
                         {/* Box 1 */}
