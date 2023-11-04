@@ -51,7 +51,7 @@ const page = () => {
       <Progress ref={ref} background={"#a9a9a9"} gradient={[
   { stop: 0.0, color: '#FFA500' }, // Orange color at the start
   { stop: 1, color: '#FF4500' },   // Darker shade of orange at the end
-]} progress={precent} reduction={0} strokeWidth={10} transitionDuration={2} transitionTimingFunction="ease" className="mb-20 font-bold" />
+]} progress={precent} reduction={0} strokeWidth={10} transitionDuration={2} transitionTimingFunction="ease" className="mb-5 font-bold" />
       </div>
       
       <div ref={ref}>

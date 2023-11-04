@@ -4,9 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import { useState } from 'react';
+
+
 import {RxDotFilled, RxDot} from 'react-icons/rx'
+import CircleBar from '@/components/circleBar';
 
 const AboutPage = () => {
+  
+
   const slides = [
     {
       url : "/assets/tech-doc.jpg"
@@ -178,15 +183,38 @@ const AboutPage = () => {
       </div>
     
       </div> 
+
+
       <div className="text-center">           
       <h1 className="text-center mt-20 text-6xl font-bold text-gray-700	"> Our Impact</h1>
-      <section className=" items-center w-1/2 mt-5 text-gray-400 overflow-wrap ">
+      <section className=" items-center mx-96 mt-5 text-gray-400 overflow-wrap ">
         <p>By harnessing the power of technology, we have unlocked a new era of accessible and personalized care.</p>
       </section>
+      <div className="flex justify-evenly mt-10"> 
+        <div className="group flex-center">
+          <CircleBar maxVal={90}/>
+          <label className="text-lg text-gray-700 font-semibold"> User Growth</label>
+        </div>
+        <div className="group flex-center ">
+          <CircleBar maxVal={90}/>
+          <label className="text-lg text-gray-700 font-semibold"> New Patients</label>
+        </div>
+        <div className="group flex-center ">
+          <CircleBar maxVal={90}/>
+          <label className="text-lg text-gray-700 font-semibold"> Using Countries</label>
+        </div>
       </div>
-      <div className="flex justify-evenly">
-          
+      <div className="mt-20">
+      <Link
+        href ="/about"
+        className="hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded  bg-emerald-400	"
+      >
+        Meet the team
+      </Link>
+      
+      </div> 
       </div>
+      
     </div>
   )
 }
