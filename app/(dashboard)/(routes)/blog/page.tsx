@@ -3,9 +3,9 @@ import Image from "next/image";
 const BlogPage = () => {
     return ( 
         <div>
-            <div className="flex pl-14 pr-14 mt-[4%] justify-around ">
+            <div className="grid lg:grid-cols-2 pl-14 pr-14 mt-[4%]">
                 {/* Left */}
-                <div className="w-[45%] text-[#505D68]">
+                <div className="text-[#505D68]">
                     {/* Title Text */}
                     <div>
                         <h1 className="font-bold text-4xl">
@@ -36,8 +36,8 @@ const BlogPage = () => {
                 </div>
 
                 {/* Boxes (Right) */}
-                {/* TODO: Make it mobile friendly by putting boxes under text when display is small */}
-                <div className="w-[45%]">
+                {/* TODO: Friendly for XS size (Add patting to extra small screen) */}
+                <div className="sm:pt-[10%] lg:pt-[0] pb-4">
                     <div className="grid grid-cols-2 gap-4">
                         {/* Box 1 */}
                         <div className="bg-[#FFD6B9] overflow-auto">
