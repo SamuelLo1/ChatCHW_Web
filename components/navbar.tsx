@@ -78,8 +78,8 @@ const NavigationBar = () => {
                 key={route.href}
                 className={cn("text-sm group flex w-full", pathname === route.href ? "text-decoration-line: underline" : "")}
               >
-                <li className="flex items-center flex-1">
-                  <a className="hover:text-[#87acec] font-bold">{route.label}</a>
+                <li className="flex items-center flex-1 hover:text-[#87acec] font-bold">
+                  {route.label}
                 </li>
               </Link>
             ))}
@@ -88,7 +88,7 @@ const NavigationBar = () => {
       
         {/* Donate Button */}
         <div>
-          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-full hover:bg-[#87acec] font-bold">Donate</button>
+          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-[3px] hover:bg-[#87acec] font-bold">Donate</button>
         </div>
 
         
