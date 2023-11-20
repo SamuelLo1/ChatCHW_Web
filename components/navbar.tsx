@@ -52,14 +52,14 @@ const NavigationBar = () => {
       <div className="flex justify-between items-center w-[97%] mx-auto">
         {/* Image */}
         <Link href="/" className="flex w-[10%]">  
-          <div className="relative w-14 h-14">
+          <div className="relative w-14 h-14 shrink-0">
             <Image
               fill
               alt="Logo"
               src="/assets/navIcon.svg"
             />
           </div>
-          <div className="relative w-20 h-10 mt-[10px]">
+          <div className="relative w-20 h-10 mt-[10px] shrink-0">
             <Image
                 fill
                 alt="LogoText"
