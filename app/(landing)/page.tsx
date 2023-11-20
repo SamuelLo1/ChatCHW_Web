@@ -3,19 +3,6 @@ import Link from "next/link";
 
 const HomePage = () => {
 
-  const slides = [
-    {
-      url: '/assets/doctors.jpg',
-    },
-    {
-      url: '/assets/tech-doc.jpg',
-    },
-    {
-      url: '/assets/tech.jpg',
-    },
-  ];
-
-
   return (
     <div>
       <div className="flex items-center justify-evenly ">
@@ -79,7 +66,7 @@ const HomePage = () => {
           
         </div>
       </div> 
-      <div className = "flex items-center justify-evenly">
+      <div className = "flex items-center justify-evenly mb-32">
         <div className="font-ubuntu align-middle flex-wrap px-32 w-1/2 overflow-wrap">
           <h1 className = "text-3xl text-gray-800 font-bold	mb-6">Problem we are solving</h1>
           <p className=" text-gray-500 mb-20">We understand that CHWs play a vital role in bridging the gap between 
@@ -105,6 +92,49 @@ const HomePage = () => {
         </div> 
        
       </div>
+
+      <div className="font-ubuntu align-middle mb-5">
+        <h1 className="flex justify-center text-5xl font-bold mb-8 text-gray-700"> Features </h1>
+        <section className="flex justify-center text-2xl font-bold px-96 text=grau=700">
+          ChatCHW envisions healthier, more vibrant communities where everyone has the opportunity to thrive.
+        </section>
+      </div>
+
+      <div className="flex items-center justify-evenly mb-24"> 
+        <div>
+          <Image 
+            src="assets/steps.svg"
+            width={375}
+            height={670}
+            alt="deviceTest"
+          />
+          
+        </div>
+        <div>
+          <Image 
+            src="assets/device.svg"
+            width={375}
+            height={670}
+            alt="device"
+          />
+          <div className="relative"> 
+           <Image 
+            src="assets/deviceTest.svg"
+            width={300}
+            height={670}
+            alt="deviceTest"
+            className="absolute bottom-96 ml-10 "
+          />
+          <Link
+            href ="/about"
+            className=" absolute hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded  bg-emerald-400	left-24 bottom-80"
+          >
+            About Us
+          </Link>
+          </div>
+          
+        </div>
+      </div> 
     </div>
 
     
