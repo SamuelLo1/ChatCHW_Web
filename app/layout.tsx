@@ -29,7 +29,7 @@ export default function RootLayout({
           <main className="pt-[60px]">
             {children}
           </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
    </html>
   )
