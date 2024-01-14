@@ -7,7 +7,7 @@ const BlogPage = () => {
                 {/* Left */}
                 <div className="text-[#505D68]">
                     {/* Title Text */}
-                    <div className="">
+                    <div>
                         <h1 className="font-bold text-6xl leading-[64px]">
                             Why people {/*<br />*/} love ChatCHW
                         </h1>
