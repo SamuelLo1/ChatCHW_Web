@@ -4,7 +4,7 @@ const DemoPage = () => {
     return ( 
         <div>
             {/* TITLE */}
-            <h1 className="border border-black text-center mt-5 font-bold text-[#505D68] text-5xl leading-[60px]">
+            <h1 className="border border-black text-center mt-5 font-bold text-[#505D68] text-6xl leading-[64px]">
                 How ChatCHW Works
             </h1>
 
