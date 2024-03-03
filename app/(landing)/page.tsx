@@ -5,29 +5,27 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-evenly ">
-        {/*SlideShow*/ }
-
-        <div className="relative max-w-[650px] h-[480px] py-16 px-4 "> 
-            
-            <Image
+      {/* Top Portion */}
+      <div className="grid lg:grid-cols-2 mt-10">
+        {/* SlideShow */ }
+        <div className="flex justify-center"> 
+          <Image
             src={"/assets/home.svg"}
             height={347}
             width={379}
-            alt = "image"
-            className='bg-center bg-cover'
-
+            alt="Three doctors"
+            className=""
           />
-  
         </div>
 
-
-        <div className="align-middle flex-wrap ml-4 w-4/12 overflow-wrap " > 
-           <h1 className="font-ubuntu text-7xl tracking-wide text-gray-600 ">Empowering community health workers</h1>
+        <div className="flex items-center text-center"> 
+           <h1 className="sm:pt-5 md:pt-2 font-ubuntu text-7xl text-gray-600 ">
+            Empowering community health workers
+           </h1>
         </div> 
-
-         
       </div>
+      
+      {/* Second Portion */}
       <div className ="w-full mb-32 "> 
           <section className="font-ubuntu text-center px-36 pt-6 text-5xl font-bold text-gray-600">
             <h1> Facilitating Community</h1>
@@ -40,6 +38,7 @@ const HomePage = () => {
           </section>
       </div> 
 
+      {/* Third Portion */}
       <div className ="flex items-center justify-evenly"> 
         <div className ="mr-20 ">
           <Image
@@ -65,7 +64,8 @@ const HomePage = () => {
           </Link>
           
         </div>
-      </div> 
+      </div>
+
       <div className = "flex items-center justify-evenly mb-32">
         <div className="font-ubuntu align-middle flex-wrap px-32 w-1/2 overflow-wrap">
           <h1 className = "text-3xl text-gray-800 font-bold	mb-6">Problem we are solving</h1>

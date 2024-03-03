@@ -43,13 +43,13 @@ const NavigationBar = () => {
   const pathname = usePathname();
   return (
     <div className="
-    flex
-    flex-col
+      flex
+      flex-col
     bg-[#2A8680]
     text-white
-    w-full
-    fixed
-    z-50
+      w-full
+      fixed
+      z-50
     ">
       <div className="flex justify-between items-center w-[97%] mx-auto">
         {/* Image */}
@@ -72,8 +72,8 @@ const NavigationBar = () => {
         </Link>
 
         {/* Routes */}
-        <div className="pr-10 ml-auto ">
-          <ul className="flex items-center gap-[4vw] ">
+        <div className="pr-10 ml-auto">
+          <ul className="flex items-center gap-[2vw] ">
           {routes.map((route) => (
               <Link
                 href={route.href}
