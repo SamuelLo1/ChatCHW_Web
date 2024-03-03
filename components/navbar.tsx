@@ -20,6 +20,7 @@ const routes = [
     href: "/about",
     color: "text-white-100",
   },
+  /*
   {
     label: "Blog",
     href: "/blog",
@@ -30,6 +31,7 @@ const routes = [
     href: "/demo",
     color: "text-white-100",
   },
+  */
   {
     label: "Contact",
     href: "/contact",
@@ -88,7 +90,9 @@ const NavigationBar = () => {
       
         {/* Donate Button */}
         <div>
-          <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-[3px] hover:bg-[#87acec] font-bold">Donate</button>
+          <a href="https://give.berkeley.edu/giftdetails?fund1=FN1290000">
+            <button className="bg-[#FFFFFF] text-[#2A8680] px-6 py-1 rounded-[3px] hover:bg-[#87acec] font-bold">Donate</button>
+          </a>
         </div>
 
         
