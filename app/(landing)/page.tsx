@@ -27,7 +27,7 @@ const HomePage = () => {
       
       {/* Second Portion */}
       <div className="w-full mb-32"> 
-          <section className="font-ubuntu text-center px-36 pt-6 text-5xl font-bold text-gray-600">
+          <section className="font-ubuntu text-center px-36 pt-6 text-5xl font-bold text-gray-600 mt-5">
             <h1> Facilitating Community</h1>
           </section>
 
@@ -96,7 +96,7 @@ const HomePage = () => {
             height ={600}
             width = {870}
             alt = "image"
-            className="bg-center bg-cover hidden md:flex mr-20"
+            className="bg-center bg-cover hidden md:flex"
           />
         </div> 
        
