@@ -51,18 +51,18 @@ const HomePage = () => {
             className="bg-center bg-cover"
           />
         </div> 
-        <div className = "font-ubuntu align-middle flex-wrap w-1/2 overflow-wrap">
+        <div className = "font-ubuntu align-middle flex flex-wrap w-1/2 overflow-wrap mb-10">
           <h1 className = "text-3xl text-gray-800 font-bold	mb-6"> 
             Who we are   
           </h1>
-          <p className=" text-gray-500 mb-20">
+          <p className=" text-gray-500 mb-10">
             ChatCHW is dedicated to supporting and empowering community health workers (CHWs)
             in their crucial role within healthcare ecosystems by providing a platform to help
             diagnose and treat individuals. 
           </p>
           <Link
             href ="/about"
-            className="hover:bg-emerald-600 w-[30%] text-slate-50	py-3 rounded bg-emerald-400 flex border border-black"
+            className="hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded bg-emerald-400"
           >
             <p className="text-center ml-auto mr-auto">
               About Us
@@ -72,23 +72,25 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className = "flex items-center justify-evenly mb-32">
-        {/* FIX WRAP -> remove px-32 -> remove map: hidden */}
-        <div className="font-ubuntu align-middle flex-wrap px-32 w-1/2 overflow-wrap">
-          <h1 className = "text-3xl text-gray-800 font-bold	mb-6 sm:pt-20">Problem we are solving</h1>
-          <p className=" text-gray-500 mb-20">We understand that CHWs play a vital role in bridging the gap between 
+      <div className = "flex items-center justify-evenly mb-32 md:ml-5 lg:ml-10">
+        <div className="font-ubuntu align-middle flex flex-wrap w-1/2 overflow-wrap">
+          <h1 className = "text-3xl text-gray-800 font-bold	mb-6 sm:pt-20">
+            Problem we are solving
+          </h1>
+          <p className=" text-gray-500 mb-10">
+            We understand that CHWs play a vital role in bridging the gap between 
             underserved communities and healthcare services, and we are
-             committed to providing them with the tools, resources,
-              and support they need to excel in their mission.
+            committed to providing them with the tools, resources,
+            and support they need to excel in their mission.
           </p>
           <Link
             href ="/about"
-            className="hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded bg-emerald-400	"
+            className="hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded bg-emerald-400"
           >
             Learn More
           </Link>
         </div>
-        <div>
+        <div className="hidden md:flex">
           <Image
             src = "/assets/lab.svg"
             height ={600}
@@ -101,9 +103,11 @@ const HomePage = () => {
       </div>
       
       <div className="font-ubuntu align-middle mb-5">
-        <h1 className="flex justify-center text-5xl font-bold mb-8 text-gray-700"> Features </h1>
+        <h1 className="flex justify-center text-5xl font-bold mb-8 text-gray-700">
+          Features
+        </h1>
         {/* CHECK px-96, typo on text-gray-700 */}
-        <section className="flex justify-center text-2xl font-bold px-96 text=grau=700">
+        <section className="flex ml-auto mr-auto text-2xl font-bold text-center w-[75%] text-gray-700">
           ChatCHW envisions healthier, more vibrant communities where everyone has the opportunity to thrive.
         </section>
       </div>
@@ -119,7 +123,7 @@ const HomePage = () => {
           />
           
         </div>
-        <div>
+        <div className="">
           <Image 
             src="assets/device.svg"
             width={375}
@@ -133,13 +137,13 @@ const HomePage = () => {
             height={670}
             alt="deviceTest"
             className="absolute bottom-96 ml-10 "
-          />
-          <Link
-            href ="/about"
-            className=" absolute hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded  bg-emerald-400	left-24 bottom-80"
-          >
-            About Us
-          </Link>
+            />
+            <Link
+              href ="/about"
+              className="absolute hover:bg-emerald-600 px-12 text-slate-50	py-3 rounded  bg-emerald-400	left-24 bottom-80"
+            >
+              About Us
+            </Link>
           </div>
           
         </div>
