@@ -24,15 +24,6 @@ const ContactPage = () => {
             </div>
 
             <div className="text-[#A1AEB7]">
-                <div className="flex items-center ml-auto mr-auto w-[70%] lg:w-[50%] pb-5">
-                    <Image 
-                        src={"/assets/phone.svg"}
-                        height={30}
-                        width={30}
-                        alt="phone"
-                    />
-                    <p className="pl-3">935-255-7994</p>
-                </div>
                 <div className="flex items-center ml-auto mr-auto w-[70%] lg:w-[50%]">
                     <Image 
                         src={"/assets/email.svg"}
@@ -40,7 +31,7 @@ const ContactPage = () => {
                         width={30}
                         alt="phone"
                     />
-                    <p className="pl-3">info@ChatCHW.com</p>
+                    <p className="pl-3">levine@berkeley.edu</p>
                 </div>
             </div>
         </div>
