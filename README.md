@@ -18,7 +18,7 @@ ChatCHW is still an ongoing development. This repository will be updated as more
 * **Next.js:** A React framework for building server-side rendering and static web applications.
 * **TypeScript:** A superset of JavaScript that adds static typing.
 * **React:** A JavaScript library for building user interfaces.
-* **Tailwind CSS:** (Mentioned in commit messages, though a commit also says "tailwind doesn't work", so its full integration might be incomplete) A utility-first CSS framework.
+* **Tailwind CSS:** A utility-first CSS framework.
 * **Inter:** A custom Google Font (as indicated by Next.js font optimization).
 * **npm/yarn/pnpm:** Package managers for JavaScript.
 
