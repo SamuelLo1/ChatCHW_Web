@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Developers
 Samuel Lo
 
@@ -7,45 +5,72 @@ Timothy Le
 
 Sophi Brent (UI/UX)
 
+# ChatCHW_Web
+
+This repository contains the source code for the web application of the ChatCHW project. ChatCHW is an initiative aimed at leveraging Large Language Models (LLMs) to support Community Health Workers (CHWs) in underserved regions. This web interface is designed to provide information on ChatCHW. If you would like to learn more about ChatCHW or see a demo of ChatCHW, please contact the project lead. More information can be found [https://urapprojects.berkeley.edu/detail.php?id=18714-3](here).
+
+## Project Status
+
+ChatCHW is still an ongoing development. This repository will be updated as more progress is made with ChatCHW.
+
+## Technologies Used
+
+* **Next.js:** A React framework for building server-side rendering and static web applications.
+* **TypeScript:** A superset of JavaScript that adds static typing.
+* **React:** A JavaScript library for building user interfaces.
+* **Tailwind CSS:** (Mentioned in commit messages, though a commit also says "tailwind doesn't work", so its full integration might be incomplete) A utility-first CSS framework.
+* **Inter:** A custom Google Font (as indicated by Next.js font optimization).
+* **npm/yarn/pnpm:** Package managers for JavaScript.
+
 ## Getting Started
 
-Welcome to the ChatCHW Website Github!
-This README.md will provide the basic introduction in running the application.
-We are currently working on a proper documentation file.
+1.  **Prerequisites:**
+    * Node.js and npm (or yarn/pnpm) installed on your system.
 
-For first-time users:
-```bash 
-# Run the following below to download npm packages
-npm install
-```
+2.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/SamuelLo1/ChatCHW_Web.git](https://github.com/SamuelLo1/ChatCHW_Web.git)
+    cd ChatCHW_Web
+    ```
 
-To run the website on your computer, run the following:
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    # yarn install
+    # or
+    # pnpm install
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    # yarn dev
+    # or
+    # pnpm dev
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure (Key Files/Folders)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* `app/`: Contains the core application code, likely following Next.js App Router conventions.
+    * `(dashboard)`: Contains all the routes like the about, blog, contact, and demo page.
+    * `(landing)`: Contains the main landing page
+* `components/`: Reusable React components.
+* `lib/`: Utility functions or libraries.
+* `public/assets/`: Static assets like images.
+* `styles/`: CSS or styling files.
+* `utils/`: Other utility modules.
+* `.eslintrc.json`: ESLint configuration for code linting.
+* `next.config.js` (or `.mjs`): Next.js configuration file.
+* `tsconfig.json`: TypeScript configuration file.
 
-## Learn More
+It would be beneficial to reach out to the maintainer (SamuelLo1) to understand the current status and potential areas for contribution.
 
-To learn more about Next.js, take a look at the following resources:
+## Acknowledgements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* This web application is a component of the broader **ChatCHW** project
+* The ChatCHW initiative has connections with the **University of California, Berkeley (Haas School of Business, College of Data Science and Society)**
+* Professor **David Levine** (UC Berkeley's Haas School of Business) is noted for his work on ChatCHW, focusing on aiding community health workers in underserved settings
