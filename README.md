@@ -7,7 +7,7 @@ Sophi Brent (UI/UX)
 
 # ChatCHW_Web
 
-This repository contains the source code for the web application of the ChatCHW project. ChatCHW is an initiative aimed at leveraging Large Language Models (LLMs) to support Community Health Workers (CHWs) in underserved regions. This web interface is designed to provide information on ChatCHW. If you would like to learn more about ChatCHW or see a demo of ChatCHW, please contact the project lead. More information can be found [https://urapprojects.berkeley.edu/detail.php?id=18714-3](here).
+This repository contains the source code for the web application of the ChatCHW project. ChatCHW is an initiative aimed at leveraging Large Language Models (LLMs) to support Community Health Workers (CHWs) in underserved regions. This web interface is designed to provide information on ChatCHW. If you would like to learn more about ChatCHW or see a demo of ChatCHW, please contact the project lead. More information can be found [here](https://urapprojects.berkeley.edu/detail.php?id=18714-3).
 
 ## Project Status
 
